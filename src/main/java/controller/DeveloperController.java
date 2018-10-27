@@ -14,6 +14,7 @@ public class DeveloperController {
     public String index() {
         return "/index";
     }
+
     @RequestMapping(value = "developer", method = RequestMethod.GET)
     public ModelAndView developer() {
         return new ModelAndView("developer", "command", new Developer());
